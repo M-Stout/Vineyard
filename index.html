@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href='test.css' rel='stylesheet'>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.transform2d.js"></script>
+  <script src="js/jquery.color.js"></script>
+  <script src="js/jquery.color.svg-names.js"></script>
+  
+  <script src="countdown.js"></script>
+  <script src="parallax.js"></script>
+  
+  
+</head>
+
+<body>
+
+  <div id="countdownContainer" data-offset="100">
+    <div id="countdown"> </div>
+    <object type="image/svg+xml" data="layers/banner.svg" id="countdownBanner">Your browser does not support SVG? maybe</object>
+  </div>
+  <img src="layers/grass.png" id="grass" data-offset="20">
+  <img src="layers/sky.png" id="sky" data-offset="5">
+  <img src="layers/road.png" id="road" data-offset="100">  
+  <a href="https://www.youtube.com/watch?v=gbbH8myJSDA"> <img src="layers/carnival.png" id="carnival" data-offset="200"> </a>
+  <a href="http://www.reddit.com/r/vineyardcommunity"> <img src="layers/hall.png" id="hall" data-offset="100"> </a>
+  <a href="https://www.youtube.com/watch?v=gtIaQe9v_pw"> <img src="layers/giraffes.png" id="giraffes" data-offset="200"> </a>
+  <a href="http://traineegenius.uphero.com/VineyardMap/"> <img src="layers/map.png" id="map" data-offset="500"> </a>
+
+
+  <script src="floatingHeads.js"></script>
+  <img id="floatingHead" src="images/winebarrelrocketpixelly.png" style="position: absolute; right: -10%; top: 50%; z-index: -2; width: 5%;" alt="This is supposed to be a picture of a floating head."> </img>
+  <audio id="floatingVoice" src="audio/rocket.mp3" type="audio/mp3"> </audio>
+  
+<div id="clouds">
+	<div class="cloud x1"></div>
+	<div class="cloud x2"></div>
+	<div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+</div>
+  
+</body>
+
+</html>		
