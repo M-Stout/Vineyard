@@ -17,7 +17,22 @@
   
 </head>
 
+
 <body>
+
+  <div id="preloader">
+    <div id="status">&nbsp; <center> LOADING </center></div>
+  </div>
+  <!-- Preloader -->
+  <script type="text/javascript">
+    //<![CDATA[
+      $(window).load(function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+      })
+    //]]>
+  </script> 
 
   <div id="countdownContainer" data-offset="100">
     <div id="countdown"> </div>
@@ -35,10 +50,15 @@
   <script src="floatingHeads.js"></script>
   <a href="http://www.google.com" id="floatingHead" style="position: absolute; right: -10%; top: 50%; z-index: 0; width: 5%;"> 
     <img id="floatingHeadIMG" src="images/winebarrelrocketpixelly.png" style="max-width:100%; " alt="This is supposed to be a picture of a floating head."> </img>
-    <audio id="floatingVoice" src="audio/rocket.mp3" type="audio/mp3"> </audio>
   </a>
+  <audio id="floatingVoice" src="audio/rocket.mp3" type="audio/mp3"> </audio>
   
 
+  <script src="mouseshy.js"></script>
+  <img id="mouseshy" src="images/flutterwhoa.svg" style="position: absolute; width: 5%; height: 5%; bottom: -5%; left: 5%; z-index: 100;"</img>
+  <audio id="flutterYay" src="audio/yay.mp3" type="audio/mp3"> </audio>
+  
+  
   <!-- Script for jqlouds (that's a plugin for clouds) -->
   <div id="clouds"></div>
   <script>

@@ -32,8 +32,8 @@ function floatBy () {
     $("#floatingVoice")[0].play();
     
     $( "#floatingHead" ).animate({
-    right: "110%",
-    transform: 'rotate(160deg)'
+      right: "110%",
+      transform: 'rotate(160deg)'
     }, 
     5000, function() {
     
