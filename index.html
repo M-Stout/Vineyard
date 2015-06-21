@@ -7,6 +7,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery.transform2d.js"></script>
+  <script src="js/jquery.jqlouds.min.js"></script>
   <script src="js/jquery.color.js"></script>
   <script src="js/jquery.color.svg-names.js"></script>
   
@@ -35,13 +36,17 @@
   <img id="floatingHead" src="images/winebarrelrocketpixelly.png" style="position: absolute; right: -10%; top: 50%; z-index: -2; width: 5%;" alt="This is supposed to be a picture of a floating head."> </img>
   <audio id="floatingVoice" src="audio/rocket.mp3" type="audio/mp3"> </audio>
   
-<div id="clouds">
-	<div class="cloud x1"></div>
-	<div class="cloud x2"></div>
-	<div class="cloud x3"></div>
-	<div class="cloud x4"></div>
-	<div class="cloud x5"></div>
-</div>
+  
+  <!-- Script for jqlouds (that's a plugin for clouds) -->
+  <div id="clouds"></div>
+  <script>
+    jQuery(function($) {
+      $('#clouds').jQlouds({ 
+        skyHeight: 400,
+        wind: false,
+      });
+    });
+  </script>
   
 </body>
 

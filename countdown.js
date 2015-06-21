@@ -1,6 +1,6 @@
 function updateWCTime() {
 	now      = new Date();
-	kickoff  = Date.parse("June 20, 2015 09:00:00 PST");
+	kickoff  = Date.parse("June 22, 2015 19:00:00 EST");
 	diff = kickoff - now;
 
 	days  = Math.floor( diff / (1000*60*60*24) );
