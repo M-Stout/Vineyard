@@ -13,8 +13,9 @@ $(document).ready(function() {
     });
     
     var randomIndex = Math.floor(Math.random() * images.length);
-    $("#floatingHead").attr("src","images/" + images[randomIndex]);
+    $("#floatingHeadIMG").attr("src","images/" + images[randomIndex]);
     $("#floatingVoice").attr("src","audio/" + audios[randomIndex] + ".mp3");
+    $("#floatingHead").attr("href", links[randomIndex]);
 
     setInterval(floatBy, 10000);
 
@@ -25,12 +26,16 @@ function floatBy () {
     
     $( "#floatingHead" ).css({
         'right': "-10%",
-    });    
+    });
+    
+
     $("#floatingVoice")[0].play();
+    
     $( "#floatingHead" ).animate({
     right: "110%",
     transform: 'rotate(160deg)'
-    }, 5000, function() {
+    }, 
+    5000, function() {
     
    // Animation Complete
     $( "#floatingHead" ).css({
@@ -39,13 +44,12 @@ function floatBy () {
     });
     
     var randomIndex = Math.floor(Math.random() * images.length);
-    $("#floatingHead").attr("src","images/" + images[randomIndex]);
+    $("#floatingHeadIMG").attr("src","images/" + images[randomIndex]);
     $("#floatingVoice").attr("src","audio/" + audios[randomIndex] + ".mp3");
+    $("#floatingHead").attr("href", links[randomIndex]);
+    
   });
   
-  $("#floatingHead").click(function() {
-    window.open(links[randomIndex]);
-  });
 
 }
 
