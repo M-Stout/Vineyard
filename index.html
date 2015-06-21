@@ -10,7 +10,8 @@
   <script src="js/jquery.jqlouds.min.js"></script>
   <script src="js/jquery.color.js"></script>
   <script src="js/jquery.color.svg-names.js"></script>
-  
+   <script src="js/jquery.path.js"></script> 
+
   <script src="countdown.js"></script>
   <script src="parallax.js"></script>
   
@@ -19,6 +20,13 @@
 
 
 <body>
+
+  <!-- Prevent scrolling. -->
+  <script>
+    $(function() {
+      $('body').mousedown(function(e){if(e.button==1)return false});
+    });
+  </script>
 
   <div id="preloader">
     <div id="status">&nbsp; <center> LOADING </center></div>
@@ -33,13 +41,16 @@
       })
     //]]>
   </script> 
-
+  
+  <script src="timeOfDay.js"> </script>
+  <img src="images/sun.svg" id="sun"> </img>
+  
   <div id="countdownContainer" data-offset="100">
     <div id="countdown"> </div>
     <object type="image/svg+xml" data="layers/banner.svg" id="countdownBanner">Your browser does not support SVG? maybe</object>
   </div>
   <img src="layers/grass.png" id="grass" data-offset="20">
-  <img src="layers/sky.png" id="sky" data-offset="5">
+  <div id="sky" data-offset="5"> </div>
   <img src="layers/road.png" id="road" data-offset="100">  
   <a href="https://www.youtube.com/watch?v=gbbH8myJSDA"> <img src="layers/carnival.png" id="carnival" data-offset="200"> </a>
   <a href="http://www.reddit.com/r/vineyardcommunity"> <img src="layers/hall.png" id="hall" data-offset="100"> </a>

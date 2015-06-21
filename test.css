@@ -5,6 +5,12 @@
 }
 
 
+html {
+
+overflow: hidden;
+
+}
+
 body {
 
   overflow: hidden;
@@ -165,8 +171,29 @@ body {
   position: absolute;
   left: -1%;
   bottom: -1%;
-  z-index: -5;
+  z-index: -6;
+  
+  background: #c9c9ff;
+  background: -moz-linear-gradient(top, #c9c9ff 0%, #7f7ffa 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #c9c9ff), color-stop(100%, #7f7ffa));
+  background: -webkit-linear-gradient(top, #c9c9ff 0%, #7f7ffa 100%);
+  background: -o-linear-gradient(top, #c9c9ff 0%, #7f7ffa 100%);
+  background: -ms-linear-gradient(top, #c9c9ff 0%, #7f7ffa 100%);
+  background: linear-gradient(to bottom, #c9c9ff 0%, #7f7ffa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9ff', endColorstr='#7f7ffa', GradientType=0 );
   
   pointer-events: none;
 }
 
+#sun
+{
+  height: 50%;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  
+  z-index: -5;
+  
+  pointer-events: none;  
+  
+}
