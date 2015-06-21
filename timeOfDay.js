@@ -1,5 +1,6 @@
 var now = new Date();
-var time = now.getHours() + now.getMinutes()/60;
+var hours = now.getHours();
+var time = hours + now.getMinutes()/60;
 var timePercent = time/24*100;
 
 
@@ -10,4 +11,8 @@ $(document).ready(function() {
     'top': '5%',
   });
 
+  
+  $('#sky').addClass("sky-gradient-"+hours);
+
+  
 });
