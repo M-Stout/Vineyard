@@ -19,6 +19,13 @@ body {
 
 
 
+a { 
+  opacity: 1; 
+} 
+
+
+
+
 /* Preloader */
 #preloader {
 	position: fixed;

@@ -1,6 +1,6 @@
 function updateWCTime() {
 	now      = new Date();
-	kickoff  = Date.parse("June 22, 2015 16:00:00 EST");
+	kickoff  = Date.parse("June 22, 2015 16:00:00 EDT");
 	diff = kickoff - now;
 
 	days  = Math.floor( diff / (1000*60*60*24) );
@@ -15,9 +15,9 @@ function updateWCTime() {
 
   
     if(dd < 0){
-      document.getElementById("countdown")
+      document.getElementById("countdown3")
             .innerHTML =
-              'Next council meeting in: <br> progress or in the past!'
+              'Justin Card party in: <br> progress or in the past!'
     } else {
         document.getElementById("countdown3")
             .innerHTML =
