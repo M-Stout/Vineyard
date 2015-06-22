@@ -130,6 +130,49 @@ body {
 
 }
 
+#countdown3Container {
+
+  width: 20%;
+  height: 25%;
+  position: absolute;
+  top: 25%;
+  right: 13%;
+  z-index: 3;
+  
+  
+  
+  pointer-events: none;
+
+}
+
+#countdown3 {
+
+  width: 80%;
+  height: 15%;
+  position: relative;
+  
+  top: 40%;
+  left: 10%;
+  z-index: 5;
+  
+  background-color: 'transparent';
+  
+  text-align: center;
+  font-size: 1.5vh;
+  font-family: 'CelestiaMedium';
+ 
+}
+
+#countdown3Banner {
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  z-index: 4;
+
+}
+
 #giraffes
 {
 	width: 29%;
@@ -191,6 +234,7 @@ body {
 	height: 60%;
   position: absolute;
   bottom: -5%;
+  z-index: -2;
 }
 
 							
