@@ -17,7 +17,7 @@ function updateWCTime() {
     if(dd < 0){
       document.getElementById("countdown")
             .innerHTML =
-              'Next council meeting in: <br> progress or in the past!'
+              'Next council meeting in: <br> yet to be scheduled!'
     } else {
         document.getElementById("countdown")
             .innerHTML =
