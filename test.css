@@ -53,7 +53,7 @@ body {
   position: absolute;
   top: 20%;
   left: 33%;
-  z-index: 4;
+  z-index: 2;
   
   
   pointer-events: none;
@@ -88,25 +88,75 @@ body {
 
 }
 
+#countdown2Container {
+
+  width: 20%;
+  height: 25%;
+  position: absolute;
+  top: 40%;
+  left: 18%;
+  z-index: 2;
+  
+  
+  pointer-events: none;
+
+}
+
+#countdown2 {
+
+  width: 80%;
+  height: 15%;
+  position: relative;
+  
+  top: 40%;
+  left: 10%;
+  z-index: 5;
+  
+  background-color: 'transparent';
+  
+  text-align: center;
+  font-size: 1.5vh;
+  font-family: 'CelestiaMedium';
+ 
+}
+
+#countdown2Banner {
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  z-index: 4;
+
+}
+
 #giraffes
 {
 	width: 29%;
 	height: 63%;
   position: absolute;
-  left: 1%;
-  top: 20%;
-  z-index: 2;
+  left: -5%;
+  top: 25%;
+  z-index: 3;
 }
 
-							
+#ssfb
+{
+	width: 15%;
+	height: 35%;
+  position: absolute;
+  left: 18%;
+  top: 31%;
+  z-index: 1;
+}							
 
 #carnival
 {
 	width: 41%;
 	height: 80%;
   position: absolute;
-  right: -5%;
-  top: 13%;
+  right: -4%;
+  top: 10%;
   z-index: 2;
 }
 
