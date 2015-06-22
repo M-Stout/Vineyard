@@ -7,7 +7,7 @@ var timePercent = time/24*100;
 $(document).ready(function() {
 
   $("#sun").css({
-    'left': timePercent + '%',
+    'left': (timePercent/2) - 25 + '%',
     'top': '5%',
   });
 
