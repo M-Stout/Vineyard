@@ -13,6 +13,12 @@ function updateWCTime() {
 	mm = mins  - hours * 60;
 	ss = secs  - mins  * 60;
 
+  
+    if(dd < 0){
+      document.getElementById("countdown")
+            .innerHTML =
+              'Next council meeting in: <br> progress or in the past!'
+    } else {
         document.getElementById("countdown3")
             .innerHTML =
               'Justin Card party in: <br>' +
@@ -20,5 +26,6 @@ function updateWCTime() {
                 hh + ' hours ' +
                 mm + ' minutes ' +
                 ss + ' seconds';
+    }
 }
 setInterval(updateWCTime, 1000 );
